@@ -5,7 +5,7 @@ module.exports = {
 	},
 	extends: [
 		'eslint:recommended',
-		'cleanjs'
+		// 'cleanjs'
 	],
 	parserOptions: {
 		ecmaFeatures: {
@@ -24,6 +24,7 @@ module.exports = {
 		'array-bracket-spacing': [ 'error', 'always' ],
 		'array-callback-return': 'error',
 		'arrow-body-style': 'error',
+		'arrow-parens': [ 'error', 'as-needed' ],
 		'arrow-spacing': 'error',
 		'block-scoped-var': 'error',
 		'block-spacing': 'error',
@@ -53,9 +54,9 @@ module.exports = {
 		'getter-return': 'error',
 		'global-require': 'error',
 		'handle-callback-err': 'error',
-		'immutable/no-let': 'error',
-		'immutable/no-mutation': 'error',
-		'immutable/no-this': 'error',
+		// 'immutable/no-let': 'error',
+		// 'immutable/no-mutation': 'error',
+		// 'immutable/no-this': 'error',
 		indent: [ 'error', 'tab' ],
 		'key-spacing': 'error',
 		'keyword-spacing': 'error',
@@ -64,7 +65,7 @@ module.exports = {
 		'max-len': 'error',
 		'max-nested-callbacks': 'error',
 		'new-parens': 'error',
-		'newline-per-chained-call': 'error',
+		'newline-per-chained-call': [ 'error', { ignoreChainWithDepth: 4 } ],
 		'no-alert': 'error',
 		'no-array-constructor': 'error',
 		'no-await-in-loop': 'error',
@@ -116,7 +117,7 @@ module.exports = {
 		'no-script-url': 'error',
 		'no-self-compare': 'error',
 		'no-sequences': 'error',
-		'no-shadow': [ 'error', { builtinGlobals: true } ],
+		'no-shadow': [ 'warn', { builtinGlobals: true } ],
 		'no-sync': [ 'error', { allowAtRootLevel: true } ],
 		'no-throw-literal': 'error',
 		'no-trailing-spaces': 'error',
@@ -138,7 +139,9 @@ module.exports = {
 		'no-whitespace-before-property': 'error',
 		'no-with': 'error',
 		'object-curly-spacing': [ 'error', 'always' ],
-		'object-property-newline': 'error',
+		'object-property-newline': [ 'error', {
+			allowMultiplePropertiesPerLine: true
+		} ],
 		'object-shorthand': 'error',
 		'operator-linebreak': 'error',
 		'prefer-arrow-callback': 'error',
@@ -148,7 +151,7 @@ module.exports = {
 		'prefer-promise-reject-errors': 'error',
 		'prefer-rest-params': 'error',
 		'prefer-spread': 'error',
-		'pure/pure': 'error',
+		// 'pure/pure': 'error',
 		'quote-props': [ 'error', 'as-needed', { keywords: false } ],
 		quotes: [ 'error', 'single' ],
 		radix: 'error',
