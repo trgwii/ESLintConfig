@@ -12,11 +12,11 @@ module.exports = {
 			experimentalObjectRestSpread: true
 		},
 		ecmaVersion: 2017,
-		sourceType: 'module'
+		sourceType: 'script'
 	},
 	plugins: [
-		'pure',
-		'immutable'
+		// 'pure',
+		// 'immutable'
 	],
 	rules: {
 		'accessor-pairs': 'error',
@@ -92,14 +92,14 @@ module.exports = {
 		'no-lone-blocks': 'error',
 		'no-lonely-if': 'error',
 		'no-loop-func': 'error',
-		'no-magic-numbers': 'error',
+		'no-magic-numbers': 'warn',
 		'no-mixed-requires': 'error',
 		'no-multi-assign': 'error',
 		'no-multi-spaces': 'error',
 		'no-multi-str': 'error',
 		'no-multiple-empty-lines': 'error',
 		'no-negated-condition': 'error',
-		'no-nested-ternary': 'error',
+		'no-nested-ternary': 'warn',
 		'no-new': 'error',
 		'no-new-func': 'error',
 		'no-new-object': 'error',
@@ -162,7 +162,7 @@ module.exports = {
 		'semi-spacing': 'error',
 		'semi-style': 'error',
 		'sort-imports': 'error',
-		'sort-keys': 'error',
+		'sort-keys': 'warn',
 		'sort-vars': 'error',
 		'space-before-blocks': 'error',
 		'space-before-function-paren': [ 'error', { named: 'never' } ],
