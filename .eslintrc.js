@@ -1,7 +1,8 @@
 module.exports = {
 	env: {
 		es6: true,
-		node: true
+		node: true,
+		browser: true
 	},
 	extends: [
 		'eslint:recommended',
@@ -31,7 +32,7 @@ module.exports = {
 		'brace-style': 'error',
 		'callback-return': 'error',
 		camelcase: 'warn',
-		'capitalized-comments': 'error',
+		'capitalized-comments': 'warn',
 		'class-methods-use-this': 'error',
 		'comma-dangle': 'error',
 		'comma-spacing': 'error',
@@ -72,6 +73,7 @@ module.exports = {
 		'no-buffer-constructor': 'error',
 		'no-caller': 'error',
 		'no-catch-shadow': 'error',
+		'no-console': 'warn',
 		'no-duplicate-imports': [ 'error', { includeExports: true } ],
 		'no-else-return': [ 'error', { allowElseIf: false } ],
 		'no-empty-function': 'error',
@@ -112,7 +114,7 @@ module.exports = {
 		'no-process-env': 'warn',
 		'no-process-exit': 'error',
 		'no-proto': 'error',
-		'no-return-assign': [ 'error', 'always' ],
+		'no-return-assign': [ 'warn', 'always' ],
 		'no-return-await': 'error',
 		'no-script-url': 'error',
 		'no-self-compare': 'error',
